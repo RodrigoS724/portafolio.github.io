@@ -1,0 +1,88 @@
+:root {
+    --darckBackColor: #1F6E8C;
+    --darckColorNavbar: #0E2954;
+    --darckBorderColor: #2E8A99;
+    --darckFontColor: #84A7A1;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: var(--darckBackColor);
+    color: var(--darckFontColor);
+    display: flex;
+}
+
+aside {
+    position: fixed;
+    background: var(--darckColorNavbar);
+    width: 20%;
+    height: 100vh;
+    display: grid;
+    grid-auto-rows: 10vh 90vh;
+    row-gap: 1rem;
+    margin-right: 1px;
+}
+
+#Myname {
+    width: 100%;
+    height: calc(0% + 3rem);
+    text-align: center;
+}
+
+#navBar {
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 0;
+    align-items: center;
+}
+
+.navButtonDiv {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navButtonDiv span {
+    display: block;
+    width: 100%;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navButtonDiv span:hover {
+    color: azure;
+    font-size: larger;
+    background-image: linear-gradient(to right,
+            rgb(23, 107, 135), rgb(0, 28, 48));
+}
+
+main {
+    margin: auto;
+    margin-left: 20%;
+    font-size: 3rem;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1px var(--darckBorderColor);
+}
+
+main .MainArticle {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 4px solid #040D12;
+}
+
+.see{
+
+}
