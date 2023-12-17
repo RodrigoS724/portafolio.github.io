@@ -1,0 +1,72 @@
+:root {
+    --backgraund: blue;
+    --cards: blue;
+}
+
+body {
+    width: 100%;
+    background-image: url(/portafolio.github.io/imgs/_e5914e79-a6d2-4efe-a43f-e8698fec67d5.jpg);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+main {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    gap: 1.5rem;
+    box-sizing: border-box;
+}
+
+.box {
+    background: rgba(3, 20, 88, 0.335);
+    height: 180px;
+    border-radius: 6px;
+    border: 1px solid #ff6600;
+    padding: 5px;
+    box-shadow: 4px 4px 8px 0px rgba(251, 63, 1, 0.3);
+}
+
+@media screen and (min-width: 320px) {
+    .box.little{
+        grid-column: span 5;
+    }
+    
+    .box.mid {
+        grid-column: span 5;
+    }
+
+    .box.big {
+        grid-column: span 5;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .box.little{
+        grid-column: span 2;
+    }
+    
+    .box.mid {
+        grid-column: span 3;
+    }
+
+    .box.big {
+        grid-column: span 5;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box.little{
+        grid-column: span 1;
+    }
+    
+    .box.mid {
+        grid-column: span 4;
+    }
+
+    .box.big {
+        grid-column: span 5;
+    }
+}
