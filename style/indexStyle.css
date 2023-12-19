@@ -1,3 +1,5 @@
+
+
 :root {
     --backgraund: blue;
     --cards: blue;
@@ -5,11 +7,13 @@
 
 body {
     width: 100%;
-    background-image: url("../imgs/_e5914e79-a6d2-4efe-a43f-e8698fec67d5.jpg");
+    /*background-image: url("../imgs/_e5914e79-a6d2-4efe-a43f-e8698fec67d5.jpg");*/
+    background-image: url("https://i.imgur.com/sJ5gNuw.jpg");
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
+    
 }
 
 main {
@@ -30,6 +34,9 @@ main {
 }
 
 @media screen and (min-width: 320px) {
+    body{
+        font-size: 10px;
+    }
     .box.little{
         grid-column: span 5;
     }
@@ -44,6 +51,9 @@ main {
 }
 
 @media screen and (min-width: 600px) {
+    body{
+        font-size: 20px;
+    }
     .box.little{
         grid-column: span 2;
     }
@@ -58,6 +68,9 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
+    body{
+        font-size: 30px;
+    }
     .box.little{
         grid-column: span 1;
     }
